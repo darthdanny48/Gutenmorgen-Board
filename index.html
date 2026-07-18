@@ -42,5 +42,203 @@ body{
 
 .card{
 
-    background:rgba(255,255,255,0
+    background:rgba(255,255,255,0.08);
+
+    border-radius:25px;
+
+    padding:25px;
+
+    margin:15px 0;
+
+    backdrop-filter:blur(15px);
+
+}
+
+h1{
+
+    font-size:70px;
+
+    margin:0;
+
+    text-align:center;
+
+}
+
+h2{
+
+    text-align:center;
+
+    font-weight:400;
+
+    margin-top:10px;
+
+}
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr 1fr;
+
+    gap:15px;
+
+}
+
+.weather{
+
+    text-align:center;
+
+    font-size:22px;
+
+}
+
+.title{
+
+    font-size:24px;
+
+    margin-bottom:10px;
+
+    font-weight:bold;
+
+}
+
+.text{
+
+    font-size:20px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<h1 id="clock">00:00</h1>
+
+<h2 id="date"></h2>
+
+</div>
+
+<div class="card">
+
+<div class="grid">
+
+<div class="weather">
+
+🌅<br>
+
+Früh<br>
+
+18°
+
+</div>
+
+<div class="weather">
+
+☀️<br>
+
+Mittag<br>
+
+25°
+
+</div>
+
+<div class="weather">
+
+🌙<br>
+
+Abend<br>
+
+20°
+
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="title">💡 Fun Fact</div>
+
+<div class="text">
+
+Heute entsteht dein persönliches Gutenmorgen-Board.
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="title">📚 Heute vor...</div>
+
+<div class="text">
+
+Hier erscheinen später historische Ereignisse.
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="title">📅 Termine</div>
+
+<div class="text">
+
+Noch keine Termine.
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function updateClock(){
+
+const now=new Date();
+
+document.getElementById("clock").innerHTML=
+
+now.toLocaleTimeString("de-DE",{
+
+hour:"2-digit",
+
+minute:"2-digit"
+
+});
+
+document.getElementById("date").innerHTML=
+
+now.toLocaleDateString("de-DE",{
+
+weekday:"long",
+
+day:"numeric",
+
+month:"long",
+
+year:"numeric"
+
+});
+
+}
+
+updateClock();
+
+setInterval(updateClock,1000);
+
+</script>
+
+</body>
+
+</html>
 
