@@ -16,161 +16,524 @@
 
 <body>
 
-<div class="overlay">
+<div class="background"></div>
 
-    <!-- Obere Reihe -->
+<div class="glass">
 
-    <div class="top">
+<header>
 
-        <div class="card clock">
+<div class="clockCard card">
 
-            <h1 id="clock">08:30</h1>
+<div id="clock">13:21</div>
 
-            <div id="date">
+<div id="date">
 
-                Dienstag, 16. Juli 2026
+Samstag, 18. Juli 2026
 
-            </div>
+</div>
 
-            <div id="holiday">
+<div class="holiday">
 
-                🎉 Heute: Mariä Himmelfahrt
+🎉 <strong>Heute:</strong>
 
-            </div>
+Mariä Himmelfahrt
 
-        </div>
+</div>
 
-        <div class="card weather">
+<div class="calendarInfo">
 
-            <h2>☀️ Wetter</h2>
+<div>
 
-            <div class="weatherGrid">
+📅 Kalenderwoche 29
 
-                <div>
+</div>
 
-                    <span>Früh</span>
+<div>
 
-                    <strong>18°</strong>
+📆 199. Tag des Jahres
 
-                </div>
+</div>
 
-                <div>
+</div>
 
-                    <span>Mittag</span>
+</div>
 
-                    <strong>26°</strong>
+<div class="weatherCard card">
 
-                </div>
+<div class="weatherHeader">
 
-                <div>
+<div>
 
-                    <span>Abend</span>
+<div class="temp">
 
-                    <strong>20°</strong>
+☀️ 24°
 
-                </div>
+</div>
 
-            </div>
+<div class="condition">
 
-            <hr>
+Sonnig
 
-            <div class="sun">
+</div>
 
-                🌅 05:43
+</div>
 
-                <span></span>
+<div class="location">
 
-                🌇 21:18
+📍 Pfinztal
 
-            </div>
+</div>
 
-        </div>
+</div>
 
-    </div>
+<div class="forecast">
 
-    <!-- Mitte -->
+<div class="forecastBox">
 
-    <div class="middle">
+<div class="icon">🌅</div>
 
-        <div class="card">
+<div class="label">
 
-            <h2>💡 Fun Fact</h2>
+Früh
 
-            <p id="fact">
+</div>
 
-                Honig ist das einzige Lebensmittel,
+<div class="value">
 
-                das praktisch niemals verdirbt.
+17°
 
-            </p>
+</div>
 
-        </div>
+</div>
 
-        <div class="card">
+<div class="forecastBox">
 
-            <h2>📚 Heute vor ...</h2>
+<div class="icon">
 
-            <p id="history">
+☀️
 
-                Apollo 11 startete Richtung Mond.
+</div>
 
-            </p>
+<div class="label">
 
-        </div>
+Mittag
 
-    </div>
+</div>
 
-    <!-- Termine -->
+<div class="value">
 
-    <div class="card appointments">
+26°
 
-        <h2>📅 Termine</h2>
+</div>
 
-        <ul>
+</div>
 
-            <li>09:00 Zahnarzt</li>
+<div class="forecastBox">
 
-            <li>14:30 Einkaufen</li>
+<div class="icon">
 
-            <li>19:00 Grillabend</li>
+🌙
 
-        </ul>
+</div>
 
-    </div>
+<div class="label">
 
-    <!-- Untere Reihe -->
+Abend
 
-    <div class="bottom">
+</div>
 
-        <div class="card">
+<div class="value">
 
-            <h2>🎯 Lernaufgabe</h2>
+20°
 
-            <p id="exercise">
+</div>
 
-                🇬🇧 Übersetze:
+</div>
 
-                "Ich spiele heute Fußball."
+</div>
 
-            </p>
+<div class="weatherBottom">
 
-        </div>
+<div>
 
-        <div class="card">
+🌄 Sonnenaufgang
 
-            <h2>😂 Witz des Tages</h2>
+<strong>
 
-            <p id="joke">
+05:43
 
-                Warum können Geister so schlecht lügen?
+</strong>
 
-                Weil man durch sie hindurchsieht.
+</div>
 
-            </p>
+<div>
 
-        </div>
+🌇 Sonnenuntergang
 
-    </div>
+<strong>
+
+21:18
+
+</strong>
+
+</div>
+
+<div>
+
+💨 Wind
+
+<strong>
+
+8 km/h
+
+</strong>
+
+</div>
+
+<div>
+
+☔ Regen
+
+<strong>
+
+10 %
+
+</strong>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+<section class="row">
+
+<div class="card">
+
+<h2>
+
+💡 Fun Fact
+
+</h2>
+
+<div class="content">
+
+<div class="image">
+
+🍯
+
+</div>
+
+<div>
+
+<p id="fact">
+
+Honig ist das einzige Lebensmittel,
+
+das praktisch niemals verdirbt.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>
+
+📖 Heute vor...
+
+</h2>
+
+<div class="content">
+
+<div class="image">
+
+🚀
+
+</div>
+
+<div>
+
+<h3>
+
+1969
+
+</h3>
+
+<p id="history">
+
+Apollo 11 startete
+
+zum Mond.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="appointments card">
+
+<div class="appointmentsLeft">
+
+<h2>
+
+📅 Termine
+
+</h2>
+
+<ul id="appointments">
+
+<li>
+
+09:00
+
+<span>
+
+Zahnarzt
+
+</span>
+
+</li>
+
+<li>
+
+14:30
+
+<span>
+
+Einkaufen
+
+</span>
+
+</li>
+
+<li>
+
+19:00
+
+<span>
+
+Grillabend
+
+</span>
+
+</li>
+
+<li>
+
+20:00
+
+<span>
+
+Fitnessstudio
+
+</span>
+
+</li>
+
+</ul>
+
+</div>
+
+<div class="calendar">
+<h3>Juli 2026</h3>
+
+<table>
+
+<tr>
+
+<th>Mo</th>
+
+<th>Di</th>
+
+<th>Mi</th>
+
+<th>Do</th>
+
+<th>Fr</th>
+
+<th>Sa</th>
+
+<th>So</th>
+
+</tr>
+
+<tr>
+
+<td></td>
+
+<td>1</td>
+
+<td>2</td>
+
+<td>3</td>
+
+<td>4</td>
+
+<td>5</td>
+
+<td>6</td>
+
+</tr>
+
+<tr>
+
+<td>7</td>
+
+<td>8</td>
+
+<td>9</td>
+
+<td>10</td>
+
+<td>11</td>
+
+<td>12</td>
+
+<td class="today">13</td>
+
+</tr>
+
+<tr>
+
+<td>14</td>
+
+<td>15</td>
+
+<td>16</td>
+
+<td>17</td>
+
+<td>18</td>
+
+<td>19</td>
+
+<td>20</td>
+
+</tr>
+
+<tr>
+
+<td>21</td>
+
+<td>22</td>
+
+<td>23</td>
+
+<td>24</td>
+
+<td>25</td>
+
+<td>26</td>
+
+<td>27</td>
+
+</tr>
+
+<tr>
+
+<td>28</td>
+
+<td>29</td>
+
+<td>30</td>
+
+<td>31</td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+<section class="row bottomRow">
+
+<div class="card">
+
+<h2>
+
+📚 Heute lernen
+
+</h2>
+
+<div class="exercise">
+
+<div class="subject">
+
+🇬🇧 Englisch
+
+</div>
+
+<p id="exercise">
+
+Übersetze:
+
+„Ich spiele heute Fußball."
+
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>
+
+😂 Tagesmotto
+
+</h2>
+
+<div class="joke">
+
+<p id="joke">
+
+Warum können Geister so schlecht lügen?
+
+Weil man durch sie hindurchsieht.
+
+</p>
+
+<div class="emoji">
+
+😂
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="footer">
+
+Gutenmorgen-Board • Version 1.0
+
+</div>
+
+</footer>
 
 </div>
 
@@ -179,4 +542,5 @@
 </body>
 
 </html>
+
 
